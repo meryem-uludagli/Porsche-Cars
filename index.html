@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARS</title>
+    <!--* Css Link -->
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <!-- * Header Alanı -->
+    <header>
+        <!-- * Sol Kısım -->
+        <nav id="nav-left">
+            <img src="./Images/logo.png" alt="logo" />
+            <a href="#">Interior Design</a>
+            <a href="#">Our Cars</a>
+            <a href="#">Exterior Design</a>
+        </nav>
+        <nav id="nav-right">
+            <a href="#">Users</a>
+            <a href="#">Discounts</a>
+            <a href="#">Dealers</a>
+        </nav>
+        <img class="menu" src="./Images/menu.png" alt="" />
+        <div class="opener">
+            <a href="#">Interior Design</a>
+            <a href="#">Our Cars</a>
+            <a href="#">Exterior Design</a>
+        </div>
+    </header>
+    <!-- * Banner Alanı -->
+    <div class="hero">
+        <div class="slogan">
+            <h1>Bmw <span>Discover Your World</span></h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, eius.
+            </p>
+            <img src="./Images/back.jfif" alt="" />
+            <h2>Your Dream Car</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum eos numquam ullam!
+            </p>
+            <button>More</button>
+        </div>
+        <div class="images">
+            <img class="images-banner" src="./Images/car1.png" alt="" />
+            <img class="images-track" src="./Images/track.png" alt="" />
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat sequi tempora modi ducimus assumenda voluptatibus quos corporis cum saepe enim.
+            </p>
+        </div>
+    </div>
+    <!-- * İç Tasarım Alanı -->
+    <div id="interior">
+        <h1>BMW Interior Design</h1>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, aliquid?
+        </p>
+        <button>DESIGN</button>
+    </div>
+
+
+    <!-- * Best Sellers  Start-->
+    <div id="cars-area">
+        <h1>Best Sellers</h1>
+        <div class="cars">
+            <div class="card">
+                <img src="./Images/Porsche-911-GT3-RS.png" alt="">
+                <h3>Porsche 911 GT3 RS</h3>
+            </div>
+
+            <div class="card">
+                <img src="./Images/Porsche-Cayen.png" alt="">
+                <h3>Porsche Cayen</h3>
+            </div>
+            <div class="card">
+                <img src="./Images/Porsche-Cayen.png" alt="">
+                <h3>Porsche Cayen</h3>
+            </div>
+        </div>
+        <button>DISCOVER</button>
+    </div>
+    <!-- * Most Seller  End-->
+
+
+    <script>
+        const images = document.querySelectorAll('.images-banner, .images-track');
+
+        images.forEach(image => {
+            image.addEventListener('mouseover', () => {
+                image.style.transform = 'scale(1.1)';
+            });
+
+            image.addEventListener('mouseout', () => {
+                image.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+
+</body>
+
+</html>
