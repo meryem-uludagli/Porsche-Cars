@@ -14,7 +14,6 @@
 }
 
 img {
-    // ! Resimin arka planında bir beyazlık mevcuttu bunu  mix-blend-mode: darken ile hallettik. Bu sayede resimin kapsayıcısının arka plan rengi neyse resimde buna göre kendini ayarlar.
     mix-blend-mode: darken;
 }
 

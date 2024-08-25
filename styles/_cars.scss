@@ -1,3 +1,5 @@
+@import "./modules";
+@import "./mediaquaries";
 #cars-area {
     display: flex;
     flex-direction: column;
@@ -6,6 +8,9 @@
     padding: 20px;
     .cars {
         display: flex;
+        @include mobile {
+            flex-direction: column;
+        }
         img {
             width: 300px;
         }
@@ -15,11 +20,11 @@
     }
     button {
         @extend %button;
-        background-color: #A02334;
-        margin-top: 70px;
-        transition: all ease-in-out 0.3s;
+        background-color: #114C50;
+        margin-top: 50px;
+        transition: all 0.5s;
         &:hover {
-            background-color: #6482AD;
+            background-color: #478ccf;
         }
     }
 }

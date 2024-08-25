@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CARS</title>
-    <!--* Css Link -->
+    <!--* CSS LINK -->
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-    <!-- * Header Alanı -->
+    <!-- * HEADER AREA -->
     <header>
         <!-- * Sol Kısım -->
         <nav id="nav-left">
@@ -31,10 +31,10 @@
             <a href="#">Exterior Design</a>
         </div>
     </header>
-    <!-- * Banner Alanı -->
+    <!-- * BANNER AREA -->
     <div class="hero">
         <div class="slogan">
-            <h1>Bmw <span>Discover Your World</span></h1>
+            <h1>Porsche <span>Discover Your World</span></h1>
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, eius.
             </p>
@@ -53,9 +53,9 @@
             </p>
         </div>
     </div>
-    <!-- * İç Tasarım Alanı -->
+    <!-- * INSIDE AREA -->
     <div id="interior">
-        <h1>BMW Interior Design</h1>
+        <h1>Porsche Interior Design</h1>
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, aliquid?
         </p>
@@ -63,42 +63,65 @@
     </div>
 
 
-    <!-- * Best Sellers  Start-->
+    <!-- * Best Sellers Start-->
     <div id="cars-area">
         <h1>Best Sellers</h1>
         <div class="cars">
             <div class="card">
-                <img src="./Images/Porsche-911-GT3-RS.png" alt="">
-                <h3>Porsche 911 GT3 RS</h3>
-            </div>
-
-            <div class="card">
-                <img src="./Images/Porsche-Cayen.png" alt="">
-                <h3>Porsche Cayen</h3>
+                <img src="./Images/Porsche-911-GT3-RS.png" alt="car-1" />
+                <h3>Porsche 911-GT3-RS</h3>
             </div>
             <div class="card">
-                <img src="./Images/Porsche-Cayen.png" alt="">
-                <h3>Porsche Cayen</h3>
+                <img src="./Images/Porsche-Cayen.png" alt="car-2" />
+                <h3>Porsche-Cayen</h3>
+            </div>
+            <div class="card">
+                <img src="./Images/2..png" alt="car-3" />
+                <h3>Porsche-911</h3>
             </div>
         </div>
         <button>DISCOVER</button>
     </div>
-    <!-- * Most Seller  End-->
+    <!-- * Porsche Alanı -->
+    <div id="exterior">
+        <h1>PORSCHE EXTERIOR</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quasi maxime labore molestiae laboriosam pariatur iste dolores. Impedit recusandae veniam unde, iste, quam ut officiis consequatur doloribus, dignissimos voluptas dolore.
+        </p>
+        <button>DESIGN</button>
+    </div>
+    <!-- * Footer Alanı -->
+    <footer>
+        <img src="./Images/porscheLOGO2.png" alt="logo" />
+        <div class="footer-links">
+            <h2>Our Pages</h2>
+            <a href="#">Users</a>
+            <a href="#">Discounts</a>
+            <a href="#">Dealers</a>
+        </div>
+        <div class="footer-links">
+            <h2>Other Links</h2>
+            <a href="#">Interior design</a>
+            <a href="#">Ours Cars</a>
+            <a href="#">Exterior Design</a>
+        </div>
+    </footer>
+</body>
 
+</html>
+<script>
+    const images = document.querySelectorAll('.images-banner, .images-track');
 
-    <script>
-        const images = document.querySelectorAll('.images-banner, .images-track');
-
-        images.forEach(image => {
-            image.addEventListener('mouseover', () => {
-                image.style.transform = 'scale(1.1)';
-            });
-
-            image.addEventListener('mouseout', () => {
-                image.style.transform = 'scale(1)';
-            });
+    images.forEach(image => {
+        image.addEventListener('mouseover', () => {
+            image.style.transform = 'scale(1.1)';
         });
-    </script>
+
+        image.addEventListener('mouseout', () => {
+            image.style.transform = 'scale(1)';
+        });
+    });
+</script>
 
 </body>
 
